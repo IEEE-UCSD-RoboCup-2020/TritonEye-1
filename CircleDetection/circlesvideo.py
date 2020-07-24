@@ -3,7 +3,8 @@ import numpy as np
 import sys
 
 def main():
-    cap = cv2.VideoCapture('ballRolling.mp4')
+    #cap = cv2.VideoCapture('ballRolling.mp4')
+    cap = cv2.VideoCapture(0)
     while cap.isOpened():
         ret, default_file = cap.read()
         # if frame is read correctly ret is True
